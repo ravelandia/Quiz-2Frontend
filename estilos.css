@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 90%;
+    margin: 0px auto;
+    padding: 5px;
+    padding-bottom: 0px;
+    border: 2px solid #444;
+}
+
+header, nav, section, footer {
+    border: 2px solid #444;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.caja {
+    border: 1px solid #444;
+    padding: 5px;
+}
+
+.larga {
+    width: 250px;
+}
+
+header div:first-child {
+    display: inline-block;
+}
+
+header div:last-child {
+    float: right;
+}
+
+nav {
+    float: right;
+    width: 30%;
+}
+
+section, footer {
+    float: left;
+    width: 60%;
+}
+
+section {
+    text-align: center;
+}
+
+.sec {
+    width: 25%;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media only screen and (max-width: 800px ) {
+    section{
+        display: block;
+        width: auto;
+        float: none;
+    }
+    section .caja:last-child, section.sec:last-child{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    section .caja, section.sec{
+        width: 46%;
+        height: 100px;
+        float: none;
+    }
+
+    
+    nav ul li{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    nav{
+        width: auto;
+        float: none;
+    }
+    footer{
+        display: block;
+        width:auto;
+        float: none;
+    }
+
+     
+    
+}
+
+@media only screen and (max-width: 450px ) {
+    nav{
+        display: none;
+    }
+    section .caja:last-child, section.sec:last-child{
+        display: none;
+    }
+    header div:first-child{
+        display: block;
+        width: 100px;
+    }
+    header div:last-child{
+        display: block;
+        float: left;
+    }
+    header{
+        height: 60px;
+    }
+    section .caja, section.sec{
+        width: 90%;
+    }
+}
+
